@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Test</title>
+  
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="top-logo">
+  <img src="assets/logo.png" alt="CareerCraft AI Logo" class="logo">
+</div>
+
+
+<div class="navbar">
+  <div class="nav-left">
+    
+  </div>
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume Builder</a>
+    <a href="ats.html">ATS Checker</a>
+    <a href="career-test.html">Career Test</a>
+    <a href="career-assistant.html">Career Assistant</a>
+
+  </div>
+  <div class="nav-right">
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+  </div>
+</div>
+
+  <section class="card">
+    <h2>Career Assistance Test (CAT)</h2>
+    <p>Answer a few personal and career-aligned questions. Be honest – this is about you!</p>
+
+    <form id="careerTestForm">
+      <h3>1. What do you enjoy doing the most?</h3>
+      <label><input type="radio" name="q1" value="tech"> Solving problems logically or coding</label><br>
+      <label><input type="radio" name="q1" value="creative"> Designing or expressing ideas creatively</label><br>
+      <label><input type="radio" name="q1" value="data"> Analyzing trends, numbers, or patterns</label><br>
+      <label><input type="radio" name="q1" value="people"> Interacting and communicating with others</label><br>
+
+      <h3>2. How do you feel about making decisions?</h3>
+      <label><input type="radio" name="q2" value="confident"> I'm confident and clear in my direction</label><br>
+      <label><input type="radio" name="q2" value="unsure"> I feel lost or unsure, but want to explore</label><br>
+      <label><input type="radio" name="q2" value="anxious"> I worry about failure or comparison</label><br>
+      <label><input type="radio" name="q2" value="motivated"> I’m excited and motivated to start somewhere</label><br>
+
+      <h3>3. What motivates you the most?</h3>
+      <label><input type="radio" name="q3" value="impact"> Making a positive impact in the world</label><br>
+      <label><input type="radio" name="q3" value="security"> Earning a stable income</label><br>
+      <label><input type="radio" name="q3" value="growth"> Continuous learning and personal growth</label><br>
+      <label><input type="radio" name="q3" value="creative"> Expressing your creativity or ideas</label><br>
+
+      <h3>4. Which best describes your strength?</h3>
+      <label><input type="radio" name="q4" value="tech"> Logical thinking / technical skills</label><br>
+      <label><input type="radio" name="q4" value="creative"> Creativity / storytelling / visuals</label><br>
+      <label><input type="radio" name="q4" value="data"> Attention to detail / analysis</label><br>
+      <label><input type="radio" name="q4" value="people"> Speaking / collaborating / persuading</label><br>
+
+      <h3>5. How do you feel emotionally when thinking about your future career?</h3>
+      <label><input type="radio" name="q5" value="hopeful"> Hopeful – I'm excited to see what's next</label><br>
+      <label><input type="radio" name="q5" value="confused"> Confused – there are too many options</label><br>
+      <label><input type="radio" name="q5" value="overwhelmed"> Overwhelmed – I don’t know where to begin</label><br>
+      <label><input type="radio" name="q5" value="inspired"> Inspired – I believe I have something to offer</label><br>
+
+      <br>
+      <button type="submit" class="btn primary">Get My Career Suggestions</button>
+    </form>
+
+    <div id="careerResult" style="margin-top: 30px;"></div>
+  </section>
+  <div id="careerResult"></div>
+
+  
+  
+
+
+  <script src="js/career-test.js"></script>
+</body>
+</html>
+</body>
+</html>

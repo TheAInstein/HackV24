@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Assistant</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/career-assistant.js"></script>
+</head>
+<body>
+  <div class="top-logo">
+    <img src="assets/logo.png" alt="CareerCraft AI Logo" class="logo" />
+  </div>
+
+  <div class="navbar">
+    <div class="nav-left"></div>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume Builder</a>
+      <a href="ats.html">ATS Checker</a>
+      <a href="career-test.html">Career Test</a>
+      <a href="career-assistant.html">Career Assistant</a>
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <section class="card">
+    <section class="card">
+  <h2>Career Assistant</h2>
+  <p>Describe your interests, goals, or strengths (e.g., “I love coding and data analysis”):</p>
+
+  <form id="careerForm">
+    <textarea id="careerInput" rows="5" placeholder="Type something like: I enjoy Python and Web Development..."></textarea>
+    <button type="submit" class="btn primary">Get Suggestions</button>
+  </form>
+
+  <div id="careerResult" style="margin-top: 20px;"></div>
+</section>
+
+
+   
+
+    <div id="careerResult" style="margin-top: 20px;"></div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 CareerCraft AI. All rights reserved.</p>
+  </footer>
+</body>
+</html>

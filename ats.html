@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATS Checker</title>
+  
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Logo Only on Top -->
+  <div class="top-logo">
+    <img src="assets/logo.png" alt="CareerCraft AI Logo" class="logo">
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume Builder</a>
+      <a href="ats.html">ATS Checker</a>
+      <a href="career-test.html">Career Test</a>
+      <a href="career-assistant.html">Career Assistant</a>
+
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- ATS Checker Section -->
+  <section class="card">
+    <h2>ATS Resume Checker</h2>
+    <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx,.txt" />
+    <button id="checkBtn">Check Resume</button>
+    <pre id="atsResults">Results will appear here...</pre>
+  </section>
+
+  <script src="js/ats-checker.js"></script>
+</body>
+</html>

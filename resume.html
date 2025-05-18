@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+</head>
+<body>
+  <div class="top-logo">
+    <img src="assets/logo.png" alt="CareerCraft AI Logo" class="logo">
+  </div>
+
+  <div class="navbar">
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume Builder</a>
+      <a href="ats.html">ATS Checker</a>
+      <a href="career-test.html">Career Test</a>
+      <a href="career-assistant.html">Career Assistant</a>
+
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+  </div>
+
+  <section class="card">
+    <h2>Build Your Resume</h2>
+
+    <form id="resume-form">
+      <input type="text" id="fullName" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      <input type="text" id="skills" placeholder="Skills (comma-separated)" />
+      <textarea id="projects" placeholder="Projects or Experience"></textarea>
+
+      <textarea id="objective" placeholder="Career Objective"></textarea>
+
+      <h3>Soft Skills</h3>
+      <label><input type="checkbox" name="softSkills" value="Teamwork" /> Teamwork</label><br>
+      <label><input type="checkbox" name="softSkills" value="Communication" /> Communication</label><br>
+      <label><input type="checkbox" name="softSkills" value="Problem Solving" /> Problem Solving</label><br>
+      <label><input type="checkbox" name="softSkills" value="Time Management" /> Time Management</label><br>
+
+      <input type="text" id="technicalSkills" placeholder="Technical Skills (comma-separated)" />
+      <input type="text" id="languages" placeholder="Languages Known (comma-separated)" />
+
+      <label for="resume-template"><strong>Upload Resume Template (TXT or DOCX):</strong></label>
+      <input type="file" id="resume-template" accept=".txt,.docx" />
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <pre id="resume-output"></pre>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

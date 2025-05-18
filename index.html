@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareerCraft AI</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <script defer>
+    // JavaScript to toggle the help popup
+    function toggleHelp() {
+      const popup = document.getElementById("help-popup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</head>
+<body>
+  <!-- Top Logo -->
+  <div class="top-logo">
+    <img src="assets/logo.png" alt="CareerCraft AI Logo" class="logo">
+  </div>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <div class="nav-left"></div>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume Builder</a>
+      <a href="ats.html">ATS Checker</a>
+      <a href="career-test.html">Career Test</a>
+      <a href="career-assistant.html">Career Assistant</a>
+
+    </div>
+    <div class="nav-right">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <span class="info-icon" onclick="toggleHelp()">ℹ️</span>
+    </div>
+  </div>
+
+  <!-- Help Popup -->
+  <div id="help-popup" class="help-popup">
+    <div class="help-content">
+      <span class="close-btn" onclick="toggleHelp()">&times;</span>
+      <h3>How to Use CareerCraft AI</h3>
+      <ul>
+        <li><strong>Resume Builder:</strong> Fill your details and click "Generate Resume".</li>
+        <li><strong>ATS Checker:</strong> Upload a resume file to evaluate ATS-friendliness.</li>
+        <li><strong>Career Test:</strong> Answer some quick questions and get personalized career guidance.</li>
+        <li><strong>Need Help?</strong> Click this ℹ️ icon anytime to view instructions.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to CareerCraft AI</h1>
+      <p>Your AI-powered career assistant to craft perfect resumes, pass ATS, and explore the right career.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 CareerCraft AI. All rights reserved.</p>
+  </footer>
+</body>
+</html>
